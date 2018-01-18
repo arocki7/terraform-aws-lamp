@@ -16,4 +16,9 @@ Security groups for each Servers.
 
 ## How to run
 
+Use the below commands to build, review and execute.
+
+terraform init
+terraform get
+terraform plan
 terraform apply
