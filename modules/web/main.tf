@@ -40,6 +40,7 @@ resource "aws_instance" "web" {
   subnet_id = "${var.subnet_id}"
 
   tags {
-    Name = "Web"
+    Name = "Web",
+    CR = "SHUTDOWN"
   }
 }

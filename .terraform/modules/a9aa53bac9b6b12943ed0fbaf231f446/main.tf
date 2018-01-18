@@ -8,7 +8,7 @@ resource "aws_security_group" "test-db" {
     from_port = "3306"
     to_port = "3306"
     protocol = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    security_groups = ["${var.sg_tf_web}"]
   }
 
   ingress {
@@ -40,6 +40,7 @@ resource "aws_instance" "db" {
   subnet_id = "${var.subnet_id}"
 
   tags {
-    Name = "DB"
+    Name = "DB",
+    CR = "SHUTDOWN"
   }
 }

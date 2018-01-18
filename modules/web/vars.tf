@@ -3,7 +3,7 @@ variable "ami" {
 }
 
 variable "key_name" {
-  default = "arocki7"
+  description = "SSH Key used for the servers."
 }
 
 variable "subnet_id" {
