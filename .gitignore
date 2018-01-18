@@ -1,2 +1,4 @@
 # Exclude .terraform directory.
 .terraform
+terraform.tfstate
+terraform.tfstate.backup
