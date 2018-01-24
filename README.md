@@ -16,9 +16,13 @@ Security groups for each Servers.
 
 ## How to run
 
+Make sure that you have a SSH key and mentioned in vars.tf.
+
+Change the AWS region in vars.tf to your proferred one.
+
 Use the below commands to build, review and execute.
 
-terraform init
-terraform get
-terraform plan
-terraform apply
+terraform init  
+terraform get  
+terraform plan  
+terraform apply  
