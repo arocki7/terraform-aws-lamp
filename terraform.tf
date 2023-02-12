@@ -1,9 +1,10 @@
+#Creating DynamoDB & S3 as remote backend
 terraform {
  backend "s3" {
  encrypt = true
- bucket = "arocki.tfstate"
- dynamodb_table = "arockitf"
- region = "eu-west-1"
+ bucket = "ashutosh.tfstate"
+ dynamodb_table = "ashutf"
+ region = "ap-south-1"
  key = "terraform-lamp.tfstate"
  }
 }
