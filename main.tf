@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 module "web" {
-  source = "modules/web"
+  source = "./modules/web"
 
   key_name = "${var.key_name}"
   subnet_id = "${aws_subnet.tf-web.id}"
@@ -12,7 +12,7 @@ module "web" {
 }
 
 module "db" {
-  source = "modules/db"
+  source = "./modules/db"
 
   key_name = "${var.key_name}"
   subnet_id = "${aws_subnet.tf-db.id}"
