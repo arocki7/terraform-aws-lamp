@@ -1,7 +1,8 @@
+#Variable Declaration
 variable "region" {
-  default = "eu-west-1"
+  default = "ap-south-1"
 }
 
 variable "key_name" {
-  default = "arocki7"
+  default = "linux"
 }
