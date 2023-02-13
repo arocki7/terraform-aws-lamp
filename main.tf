@@ -1,6 +1,8 @@
 # Configuring the AWS Provider
 provider "aws" {
   region = "${var.region}"
+  access_key = ""
+  secret_key = ""
 }
 
 module "web" {
