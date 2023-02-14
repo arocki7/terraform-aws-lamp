@@ -1,4 +1,4 @@
-#Creating DynamoDB & S3 as remote backend
+# Creating DynamoDB & S3 as remote backend
 terraform {
  backend "s3" {
  encrypt = true
