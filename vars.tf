@@ -1,4 +1,4 @@
-#Variable Declaration
+# Variable Declaration
 variable "region" {
   default = "ap-south-1"
 }
