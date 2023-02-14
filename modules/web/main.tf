@@ -25,7 +25,7 @@ resource "aws_security_group" "test-web" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags {
+  tags = {
     Name = "test-web"
   }
 }
@@ -39,7 +39,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = ["${aws_security_group.test-web.id}"]
   subnet_id = "${var.subnet_id}"
 
-  tags {
+  tags = {
     Name = "Web"
     CR = "SHUTDOWN"
   }
