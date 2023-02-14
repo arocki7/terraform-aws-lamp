@@ -1,7 +1,8 @@
 # Creating the vpc
 resource "aws_vpc" "tf-vpc" {
   cidr_block = "172.21.0.0/16"
-  tags {
+  
+  tags = {
   Name = "TF VPC - Lamp"
   }
 }
@@ -12,7 +13,8 @@ resource "aws_subnet" "tf-web" {
   cidr_block = "172.21.0.0/24"
   availability_zone = "ap-south-1a"
   map_public_ip_on_launch = true
-  tags {
+  
+  tags = {
   Name = "tf-web"
   }
 }
@@ -22,7 +24,8 @@ resource "aws_subnet" "tf-db" {
   vpc_id = "${aws_vpc.tf-vpc.id}"
   cidr_block = "172.21.1.0/24"
   availability_zone = "ap-south-1b"
-  tags {
+  
+  tags = {
   Name = "tf-db"
   }
 }
@@ -31,7 +34,7 @@ resource "aws_subnet" "tf-db" {
 resource "aws_internet_gateway" "igw_tf" {
   vpc_id = "${aws_vpc.tf-vpc.id}"
 
-  tags {
+  tags = {
   Name = "TF - IGW"
   }
 }
