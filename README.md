@@ -18,7 +18,7 @@ Security groups for each Servers.
 
 Make sure that you have a SSH key and mentioned in vars.tf.
 
-Change the AWS region in vars.tf to your proferred one.
+Change the AWS region in vars.tf to your preferred one.
 
 Use the below commands to build, review and execute.
 
